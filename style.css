@@ -12,4 +12,43 @@ body{
 .topNav{
      width: 100%;
      background-color: black;
+     color: white;
+     text-align: center;
+     height: 70px;
+}
+
+.main{
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+}
+
+.sideNav{
+     width: 300px;
+     background: grey;
+     height: auto;
+     padding: 10px 15px 0 15px;
+}
+
+.content{
+     width:60%;
+     padding: 10px 15px 0 15px;
+}
+
+.days-wrapper{
+     display: flex;
+     justify-content: space-between;
+}
+
+.currForecast{
+     border: 1px solid grey;
+     border-radius: 5px;
+     padding: 10px;
+}
+
+.day{
+     background: royalblue;
+     border-radius: 5px;
+     color: white;
+     padding: 10px;
 }

@@ -13,6 +13,7 @@
 
      <script src="script.js"></script>
      
+     
 </head>
 <body>
      <!-- TOP NAV -->
@@ -21,90 +22,79 @@
           <!-- Hamburger icon (IF I'M GOING FOR RESPONSIVENESS THIS IS BETTER DESIGN)  -->
      </div>
 
-     <!-- SIDE NAV -->
-     <div class="sideNav">
-
-          <label for="search-bar">
-               <h3>Search for a City:</h3>
-               <input type="text" id="search-bar">
-               <button type="button">Search</button>
-          </label>
-
-          <div class="search-history">
-               <!-- dynamically add butttons -->
-          </div>
-     </div>
-
-     <!-- CONTENT -->
-          <!-- Today's Weathter Forecast -->
-               <!-- h1 => City, Date -->
-               
-               <!-- p =>  Temperature, span => tempValue-->
-
-               <!-- p => Humidity, span => humidValue -->
-
-               <!-- p => Wind Speed, span => winSpdValue-->
-
-               <!-- p => UV Index, span => uvValue-->
-
-          <!-- 5 Day Forecast -->
-               <!-- 5 divs for the next 5 days, same structure and css -->
-               
-               <!-- Div structure -->
-                    <!-- h2/h3/h4 => Date -->
-                    <!-- icon for that days weather -->
-                    <!-- p => Temp:, span => tempVal -->
-                    <!-- p => Humidity:, span => humidVal -->
-     <div class="content">
-          
-          <div class="currForecast">
-               <h2>City <span id="currDate">(Date)</span></h2>
-
-               <p>Temperature: <span id="tempValue"></span></p>
-               <p>Humidity: <span id="humidValue"></span></p>
-               <p>Wind Speed: <span id="winSpdValue"></span></p>
-               <p>UV Index: <span id="uvValue"></span></p>
-          </div>
-
-          <div class="fiveDayForecast">
-               <h2>5-Day Forecast:</h2>
-
-               <div id="day1">
-                    <h3>Date1</h3>
-                    <div class="icon"></div>
-                    <p>Temp: <span class="tempVal"></span></p>
-                    <p>Humidity: <span class="humidVal"></span></p>
-               </div>
-
-               <div id="day2">
-                    <h3>Date2</h3>
-                    <div class="icon"></div>
-                    <p>Temp: <span class="tempVal"></span></p>
-                    <p>Humidity: <span class="humidVal"></span></p>
-               </div>
-
-               <div id="day3">
-                    <h3>Date3</h3>
-                    <div class="icon"></div>
-                    <p>Temp: <span class="tempVal"></span></p>
-                    <p>Humidity: <span class="humidVal"></span></p>
-               </div>
-
-               <div id="day4">
-                    <h3>Date4</h3>
-                    <div class="icon"></div>
-                    <p>Temp: <span class="tempVal"></span></p>
-                    <p>Humidity: <span class="humidVal"></span></p>
-               </div>
-
-               <div id="day5">
-                    <h3>Date5</h3>
-                    <div class="icon"></div>
-                    <p>Temp: <span class="tempVal"></span></p>
-                    <p>Humidity: <span class="humidVal"></span></p>
-               </div>
-          </div>
-     </div>
      
+     <div class="main">
+
+          <!-- SIDE NAV -->
+          <div class="sideNav">
+
+               <label for="search-bar">
+                    <h3>Search for a City:</h3>
+                    <input type="text" id="search-bar">
+                    <button type="button">
+                         Search
+                    </button>
+               </label>
+
+               <div class="search-history">
+                    <!-- dynamically add butttons -->
+               </div>
+          </div>
+
+          <!-- Content -->
+          <div class="content">
+               
+               <div class="currForecast">
+                    <h2>City <span id="currDate">(Date)</span></h2>
+
+                    <p>Temperature: <span id="tempValue"></span></p>
+                    <p>Humidity: <span id="humidValue"></span></p>
+                    <p>Wind Speed: <span id="winSpdValue"></span></p>
+                    <p>UV Index: <span id="uvValue"></span></p>
+               </div>
+               <br>
+
+               <div class="fiveDayForecast">
+                    <h2>5-Day Forecast:</h2>
+                    
+                    <div class="days-wrapper">
+                         <div id="day1" class="day">
+                              <h3>Date1</h3>
+                              <div class="icon"></div>
+                              <p>Temp: <span class="tempVal"></span></p>
+                              <p>Humidity: <span class="humidVal"></span></p>
+                         </div>
+
+                         <div id="day2" class="day">
+                              <h3>Date2</h3>
+                              <div class="icon"></div>
+                              <p>Temp: <span class="tempVal"></span></p>
+                              <p>Humidity: <span class="humidVal"></span></p>
+                         </div>
+
+                         <div id="day3" class="day">
+                              <h3>Date3</h3>
+                              <div class="icon"></div>
+                              <p>Temp: <span class="tempVal"></span></p>
+                              <p>Humidity: <span class="humidVal"></span></p>
+                         </div>
+
+                         <div id="day4" class="day">
+                              <h3>Date4</h3>
+                              <div class="icon"></div>
+                              <p>Temp: <span class="tempVal"></span></p>
+                              <p>Humidity: <span class="humidVal"></span></p>
+                         </div>
+
+                         <div id="day5" class="day">
+                              <h3>Date5</h3>
+                              <div class="icon"></div>
+                              <p>Temp: <span class="tempVal"></span></p>
+                              <p>Humidity: <span class="humidVal"></span></p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
 </body>
 </html>
