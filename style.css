@@ -9,6 +9,11 @@ body{
      height: 100vh;
 }
 
+p{
+     margin-top: 5px;
+     margin-bottom: 5px;
+}
+
 .topNav{
      width: 100%;
      background-color: black;
@@ -27,7 +32,7 @@ body{
      width: 300px;
      background: grey;
      height: auto;
-     padding: 10px 15px 0 15px;
+     padding: 10px 15px 10px 15px;
 }
 
 .content{
@@ -47,8 +52,17 @@ body{
 }
 
 .day{
+     width: 18%;
      background: royalblue;
      border-radius: 5px;
      color: white;
      padding: 10px;
+}
+
+.citiesBtn{
+     width: 100%;
+     margin-top: 5px;
+     padding: 5px;
+     border: none;
+     border-radius: 3px;
 }
