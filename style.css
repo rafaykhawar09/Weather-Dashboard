@@ -40,6 +40,11 @@ p{
      padding: 10px 15px 0 15px;
 }
 
+.h2-wrapper{
+     display: flex;
+     align-items: center;
+}
+
 .days-wrapper{
      display: flex;
      justify-content: space-between;
