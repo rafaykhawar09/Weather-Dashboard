@@ -3,107 +3,63 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     
-     <title>Weather Forecast</title>
-     
-     <link rel="stylesheet" type="text/css" href="style.css">
 
+     <title>Weather Dashboard </title>
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+     <!-- Icons - FontAwesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+     
+     <!-- jQuery CDN -->
      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-</head>
-<body>
-     <!-- TOP NAV -->
-     <div class="topNav">
-          <h1>Weather Dashboard</h1>
-          <!-- Hamburger icon (IF I'M GOING FOR RESPONSIVENESS THIS IS BETTER DESIGN)  -->
-     </div>
 
-     
+     <!-- Moment.js CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+
+     <!-- My Files-->
+     <link rel="stylesheet" href="Assets/CSS/style.css">
+     <script src="Assets/JS/script.js"></script>
+</head>
+
+<body>
      <div class="main">
 
-          <!-- SIDE NAV -->
-          <div class="sideNav">
+          <!-- Today's Forecast -->
+          <div class="forecast-container"> 
 
-               <div class="search-bar-wrapper">
-                    <label for="search-bar">
-                         <h3>Search for a City:</h3>
-                         <input type="text" id="search-bar" placeholder="City">
-                    </label>
-                    <button type="button" id="searchBtn">Search</button>
+               <div class="forecast-info">
+                    
+                    <!-- Location -->
+                    <h2 class="curr-location" style="padding-left: 6px;">Location</h2>
+                    
+                    <!-- Temperature -->
+                    
+                    <p class="tempValue">Temp</p>
+                    
+                    <!-- Description -->
+                    <h3 class="weatherDesc" style="padding-left: 6px;">Description</h3>
                </div>
 
-               <div id="search-history">
-                    <!-- dynamically add butttons -->
-               </div>
+               <!-- <div class="search-btn">
+                    <i class="fas fa-plus"></i>
+               </div> -->
           </div>
 
-          <!-- Content -->
-          <div class="content">
+          <div class="hourly-container">
+               <!-- <div class="hourly-card">
+                    <h4>Temp</h4>
+                    <p>icon</p>
+                    <h4>time</h4>
+               </div> -->
+          </div>
+
+          <!-- Forecast -->
+          <div class="daily-forecast">
                
-               <div class="currForecast">
-                    
-                    <div class="h2-wrapper">
-                         <h2>
-                              <span id="currCity">(City)</span>
-                              <span id="currDate">(Date)</span>
-                         </h2>
-                         <img id="weatherIcon">
-                    </div>
-                    
-
-                    <p>Temperature: <span id="tempValue">X</span> &degC</p>
-                    <p>Humidity: <span id="humidValue">X</span>%</p>
-                    <p>Wind Speed: <span id="winSpdValue">X</span> MPH</p>
-                    <p>UV Index: <span id="uvValue"></span></p>
-               </div>
-               <br>
-
-               <div class="fiveDayForecast">
-                    <h2>5-Day Forecast:</h2>
-                    
-                    <div class="days-wrapper">
-                         <div id="day1" class="day">
-                              <h3>Date1</h3>
-                              <div class="icon">
-
-                              </div>
-                              <p>Temp: <span class="tempVal">X</span> &degC</p>
-                              <p>Humidity: <span class="humidVal">X</span>%</p>
-                         </div>
-
-                         <div id="day2" class="day">
-                              <h3>Date2</h3>
-                              <div class="icon"></div>
-                              <p>Temp: <span class="tempVal">X</span> &degC</p>
-                              <p>Humidity: <span class="humidVal">X</span>%</p>
-                         </div>
-
-                         <div id="day3" class="day">
-                              <h3>Date3</h3>
-                              <div class="icon"></div>
-                              <p>Temp: <span class="tempVal">X</span>%</p>
-                              <p>Humidity: <span class="humidVal">X</span>%</p>
-                         </div>
-
-                         <div id="day4" class="day">
-                              <h3>Date4</h3>
-                              <div class="icon"></div>
-                              <p>Temp: <span class="tempVal">X</span>%</p>
-                              <p>Humidity: <span class="humidVal">X</span>%</p>
-                         </div>
-
-                         <div id="day5" class="day">
-                              <h3>Date5</h3>
-                              <div class="icon"></div>
-                              <p>Temp: <span class="tempVal">X</span>%</p>
-                              <p>Humidity: <span class="humidVal">X</span>%</p>
-                         </div>
-                    </div>
-               </div>
           </div>
-     </div>
 
-     
-     <script src="script.js"></script>
+     </div>
 </body>
 </html>

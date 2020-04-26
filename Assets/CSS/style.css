@@ -1,0 +1,179 @@
+     *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Roboto', sans-serif;
+     }
+
+     .main{
+          width: 375px;
+          height: 812px;
+          background-color: white;
+          overflow-y: scroll;
+     }
+
+     ::-webkit-scrollbar {
+          display: none;
+     }
+
+
+     .forecast-container{
+          width: 100%;
+          height: 55%;
+          background-image: url("../Images/appIcon.png");
+          background-repeat: no-repeat;
+          background-size: 110%;
+          background-position-x: center;
+          background-position-y: bottom;
+          position: relative;
+          padding: 20px 20px 0 20px;
+     }
+
+     .forecast-info{
+          position: absolute;
+          color: #4b4966;
+     }
+
+     .search-btn{
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #00bfa6;
+          top: 40px;
+          right: 20px;
+          border: transparent;
+          box-shadow: 0 3px 6px #005247;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          color: white;
+     }
+
+     .tempValue{
+          font-size: 80px;
+     }
+
+     .curr-date{
+          color: #3f3d56;
+     }
+
+     .h-rule{
+          margin: auto;
+          width: 335px;
+          height: 1px;
+          border-top: 1px solid lightgrey;
+     }
+
+     .hourly-container{
+          width: 100%;
+          height: 12%;
+          border-top: 1px solid lightgrey;
+          border-bottom: 1px solid lightgrey;
+          display: flex;
+          overflow-x: scroll;
+     }
+
+     .hourly-card{
+          min-width: 70px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+     }
+
+     .daily-forecast{
+          width: 100%;
+          height: 40%;
+          padding: 20px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+     }
+
+     .daily-card{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #3f3d56;
+     }
+
+     .col{
+          font-size: 18px;
+     }
+
+     .daily-card:not(:first-child):not(:last-child){
+          margin: 5px 0;
+     }
+
+     .col{
+          width: 30%;
+          display: flex;
+     }
+
+     .col:nth-child(2){
+          justify-content: center;
+     }
+
+     .col:nth-child(3){
+          justify-content: flex-end;
+     }
+
+     .icon{
+          font-size: 32px;
+          color: #504e6d;
+          display: flex;
+          justify-content: center;
+     }
+
+     .pos-rel{
+          position: relative;
+     }
+
+     .iconOne{
+          left: 11px;
+          z-index: 10;
+     }
+
+     .iconTwo{
+          font-size: 24px;
+          left: -4px;
+     }
+
+     .sun{
+          color: #aea9d3;
+     }
+
+     .bolt, .darkCloud{
+          color: black;
+     }
+
+     .bolt{
+          font-size: 18px;
+          top: 25px;
+          left: -15px;
+     }
+
+     .darkCloud, .sun{
+          z-index: 0;
+     }
+
+     .daily-temp span{
+          margin-left: 12px;
+          color: #807daa;
+     }
+
+     @media only screen and (min-width: 375px){
+          
+          body{
+               background-color: #31303f;
+          }
+
+          .main{
+               margin: auto;
+               margin-top: 50px;
+               border-radius: 10px;
+               box-shadow: 0 5px 15px 2px rgb(54, 54, 54);
+          }
+     }
