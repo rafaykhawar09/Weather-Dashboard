@@ -25,22 +25,22 @@ function displayCurrWeather(currWeather) {
      let sunset = currWeather.sunset;
 
      if (condition === "rain" || condition === "drizzle")
-          bkg.css("background-image", "url('/Assets/Images/rainy.png')");
+          bkg.css("background-image", "url('../Assets/Images/rainy.png')");
 
      else if (condition === "snow")
-          bkg.css("background-image", "url('/Assets/Images/snowy.png')");
+          bkg.css("background-image", "url('../Assets/Images/snowy.png')");
 
      else if (condition === "clouds")
-          bkg.css("background-image", "url('/Assets/Images/cloudy.png')");
+          bkg.css("background-image", "url('../Assets/Images/cloudy.png')");
 
      else if (condition === "clear" && (sunrise < currTime && currTime < sunset))
-          bkg.css("background-image", "url('/Assets/Images/sunny.png')");
+          bkg.css("background-image", "url('../Assets/Images/sunny.png')");
 
      else if (condition === "clear" && (currTime < sunrise || currTime > sunset))
-          bkg.css("background-image", "url('/Assets/Images/clearNight.png')");
+          bkg.css("background-image", "url('../Assets/Images/clearNight.png')");
 
      else
-          bkg.css("background-image", "url('/Assets/Images/thunderstorm.png')");
+          bkg.css("background-image", "url('../Assets/Images/thunderstorm.png')");
 };
 
 function getIconStr(weatherCondition) {
